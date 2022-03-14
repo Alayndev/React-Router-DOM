@@ -3,7 +3,11 @@ import React from "react";
 function Home() {
   return (
     <>
-      <h1>Hace tu búsqueda desde la caja de búsqueda de arriba</h1>
+      <div className="title">
+        <h1 style={{ textAlign: "center" }}>
+          Hace tu búsqueda desde la caja de búsqueda
+        </h1>
+      </div>
     </>
   );
 }
