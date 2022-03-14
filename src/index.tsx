@@ -10,3 +10,5 @@ ReactDOM.render(
   </HashRouter>,
   document.getElementById("root")
 );
+
+// HashRouter instead of BrowserRouter because of GitHub Pages
