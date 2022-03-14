@@ -1,9 +1,10 @@
 import React from "react";
+import Carousel from "react-elastic-carousel";
 
 type ItemProps = {
   title: string;
   price: number;
-  img: string;
+  pictures: any;
   link: string;
   warranty: string;
 };
@@ -14,7 +15,16 @@ function Item(props: ItemProps) {
   return (
     <>
       <div className="card result-item">
-        <img src={props.img} alt="item" className="card__img" />
+        <Carousel isRTL>
+          {props.pictures.map((item) => (
+            <img
+              key={item.id}
+              src={item.secure_url}
+              alt="item"
+              className="card__img"
+            />
+          ))}
+        </Carousel>
 
         <div className="card__data">
           <h4 className="result-item-title">Título: {props.title}</h4>

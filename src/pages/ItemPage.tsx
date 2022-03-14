@@ -17,7 +17,7 @@ function ItemPage() {
         id: results.id,
         title: results.title,
         price: results.price,
-        img: results.thumbnail,
+        pictures: results.pictures,
         link: results.permalink,
         warranty: results.warranty,
       },
@@ -40,7 +40,7 @@ function ItemPage() {
             key={i.id}
             title={i.title}
             price={i.price}
-            img={i.img}
+            pictures={i.pictures}
             link={i.link}
             warranty={i.warranty}
           />
