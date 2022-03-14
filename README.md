@@ -16,3 +16,5 @@ Buscador de ML con React Router DOM: https://alayndev.github.io/React-Router-DOM
 - TypeScript
 
 - Cross env
+
+- Carousel (React Elastic Carousel)
