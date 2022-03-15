@@ -12,11 +12,14 @@ type ItemProps = {
 function Item(props: ItemProps) {
   console.log("render Item");
 
+  const pictures =
+    props.pictures.length > 10 ? props.pictures.slice(0, 13) : props.pictures;
+
   return (
     <>
       <div className="card result-item">
         <Carousel isRTL>
-          {props.pictures.map((item) => (
+          {pictures.map((item) => (
             <img
               key={item.id}
               src={item.secure_url}
