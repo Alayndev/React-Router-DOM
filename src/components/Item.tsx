@@ -9,6 +9,8 @@ type ItemProps = {
   warranty: string;
 };
 
+// Hola
+
 function Item(props: ItemProps) {
   console.log("render Item");
 
